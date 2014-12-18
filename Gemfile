@@ -10,5 +10,17 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use debugger
-# gem 'debugger'
+group :development, :test do
+  gem 'faker'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'poltergeist'
+end
+
+gem 'nocms-blocks', git: 'https://github.com/simplelogica/nocms-blocks.git', branch: 'master'
+gem 'globalize'
