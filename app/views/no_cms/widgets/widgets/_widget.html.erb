@@ -1,0 +1,4 @@
+<%= options ||= {} %>
+<% widget.blocks.each do |block| %>
+  <%= render_widget_block block, options unless block.draft %>
+<% end unless widget.blank? %>
