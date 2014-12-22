@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Gem with widgets functionality independent from any CMS and embeddable in any Rails 4 app"
   s.description = "Gem with widgets functionality independent from any CMS and embeddable in any Rails 4 app"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "nocms-blocks", '~> 0.0', '>= 0.0.1'
 
