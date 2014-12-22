@@ -2,7 +2,7 @@
 
 ## What's this?
 
-This is a Rails engine with a basic functionality of customizable widgets. It's not attached to any particular CMS so you can use it freely within your Rails application without too much dependencies,¡.
+This is a Rails engine with a basic functionality of customizable widgets. It's not attached to any particular CMS so you can use it freely within your Rails application without too much dependencies.
 
 ## How do I install it?
 
@@ -31,13 +31,13 @@ rails g nocms:blocks
 
 NoCMS Widgets depends on NoCMS Blocks, you can see how NoCMS Blocks works [here](https://github.com/simplelogica/nocms-blocks). Then, you only need to render the widget in the views you want show it:
 
-```ruby
+```rails
 <%= render NoCms::Widgets::Widget.get 'my-widget' %>
 ```
 Where the string 'my-widget' is the slug of the widget to render.
 
 If you want to set cache options you need to pass this options as locals:
-```ruby
+```rails
 <%= render partial: 'no_cms/widgets/widgets/widget', locals: { widget: NoCms::Widgets::Widget.get 'my-widget', options: { cache_enabled: false } } %>
 ```
 
