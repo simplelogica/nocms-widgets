@@ -29,7 +29,14 @@ rails g nocms:blocks
 
 ## Rendering widgets
 
-NoCMS Widgets depends on NoCMS Blocks, you can see how NoCMS Blocks works [here](https://github.com/simplelogica/nocms-blocks). Then, you only need to render the widget in the views you want show it:
+NoCMS Widgets depends on NoCMS Blocks, you can see how NoCMS Blocks works [here](https://github.com/simplelogica/nocms-blocks).
+
+First, you must add the next line to application_controller.rb:
+```rails
+helper NoCms::Widgets::WidgetsHelper
+```
+
+Then, you only need to render the widget in the views you want show it:
 
 ```rails
 <%= render NoCms::Widgets::Widget.get 'my-widget' %>
