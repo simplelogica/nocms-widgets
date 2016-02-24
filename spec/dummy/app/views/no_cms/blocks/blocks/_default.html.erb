@@ -1,8 +1,4 @@
 <div class='block'>
-  <% block.fields_info.each do |field_name, field_content| %>
-    <div class="<%=field_name %>">
-      <h2><%=field_name %></h2>
-      <p><%= field_content %></p>
-    </div>
-  <% end %>
+  <h2><%= block.title %></h2>
+  <p><%= block.body %></p>
 </div>
