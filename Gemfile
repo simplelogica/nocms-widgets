@@ -22,5 +22,5 @@ group :test do
   gem 'poltergeist'
 end
 
-gem 'nocms-blocks', git: 'https://github.com/simplelogica/nocms-blocks.git', branch: 'master'
+gem 'nocms-blocks', git: 'https://github.com/simplelogica/nocms-blocks.git', branch: 'edge'
 gem 'globalize'
