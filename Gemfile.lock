@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/simplelogica/nocms-blocks.git
-  revision: 3b7550ed8ec08eec7e06925132dbf3b42c304169
+  revision: ec296e8b9e59800f0cea9415772872d8e0483fb4
   branch: edge
   specs:
-    nocms-blocks (1.1.2)
+    nocms-blocks (1.1.3)
       activeresource (~> 4.0, <= 4.1)
       awesome_nested_set (~> 3.0.0)
       globalize (>= 4.0.0, < 5.1)
@@ -13,7 +13,7 @@ PATH
   remote: .
   specs:
     nocms-widgets (0.0.1)
-      nocms-blocks (~> 1.0, >= 1.1.2)
+      nocms-blocks (~> 1.0, >= 1.1.3)
 
 GEM
   remote: https://rubygems.org/
